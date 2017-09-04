@@ -2,6 +2,7 @@
 name = "feroxide-gui"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 version = "1.0.0"
 =======
 version = "0.0.2"
@@ -9,6 +10,9 @@ version = "0.0.2"
 =======
 version = "1.0.1"
 >>>>>>> f12eb2a (Update to feroxide 1.3.2)
+=======
+version = "1.1.0"
+>>>>>>> 1a5088b (Increased version)
 authors = ["feroxide"]
 
 description = "A basic chemistry simulator (GUI)"
