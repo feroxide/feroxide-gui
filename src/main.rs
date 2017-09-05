@@ -88,7 +88,7 @@ use std::process;
 
 
 // You could specify another OpenGL version here,
-// None will use the default one
+// `None` will use the default one
 const OPENGL: Option<OpenGL> = None;
 
 const TITLE: &str = "Feroxide";
@@ -99,23 +99,24 @@ const FONT_SIZE: FontSize = 20;
 const CTRL_C: &str = "\u{3}";
 
 
+/// Create a window with the default settings
 fn set_up_window() -> PistonWindow {
     let window_settings = WindowSettings::new(TITLE, DIMENSIONS)
         .decorated(true)
-        .exit_on_esc(true)
         .maybe_opengl(OPENGL)
         .resizable(true)
         .vsync(false);
 
     let mut window: PistonWindow = window_settings.build().unwrap();
 
-    window.set_lazy(false);
+    window.set_lazy(true);
     window.set_max_fps(60);
 
     window
 }
 
 
+/// Get the glyphs using the factory
 fn get_glyphs(factory: gfx_device_gl::Factory) -> Glyphs {
     let texture_settings = TextureSettings::new();
 
@@ -127,6 +128,7 @@ fn main() {
     let mut window = set_up_window();
     let factory = window.factory.clone();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         fo_container.add_elements(&[
             ContainerCompound {
@@ -161,6 +163,9 @@ fn main() {
         println!("{}", fo_container.stringify());
     }));
 =======
+=======
+
+>>>>>>> f8b4840 (Added color function)
     let mut container = Container {
         contents: vec! {
             ContainerCompound {
@@ -205,6 +210,7 @@ fn main() {
                 process::exit(0);
             }
         }
+
 
         window.draw_2d(&event, |ctx, g2d| {
             // Clear screen
