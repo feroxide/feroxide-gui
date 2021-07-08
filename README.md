@@ -5,6 +5,10 @@
 
 A GUI for feroxide
 
+# NO MAINTENANCE MODE
+While I am still interested in continuing this project, I have decided not to spend much effort into producing new features. Feel free to reach out to me through github Issues if you want to take over this codebase and help improve it.
+
+
 ## CLI
 
 The CLI (which this GUI is built on) can be found [here](https://github.com/feroxide/feroxide).
